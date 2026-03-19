@@ -4,7 +4,6 @@ import {
   addToCart,
   updateCart,
   deleteFromCart,
-  clearCart
 } from "../controllers/cart.controller";
 import { isAuth } from "../middlewares/auth.middleware";
 
@@ -14,6 +13,5 @@ router.get("/", isAuth, getCart);
 router.post("/", isAuth, addToCart);
 router.patch("/", isAuth, updateCart);
 router.delete("/:id", isAuth, deleteFromCart);
-router.delete("/", isAuth, clearCart);  
 
 export default router;
