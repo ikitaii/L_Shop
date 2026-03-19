@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 13",
+    "description": "Apple smartphone",
+    "price": 800,
+    "category": "phones",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S21",
+    "description": "Samsung smartphone",
+    "price": 700,
+    "category": "phones",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "MacBook Air",
+    "description": "Apple laptop",
+    "price": 1200,
+    "category": "laptops",
+    "available": false
+  }
+]
