@@ -22,5 +22,29 @@
     "price": 1200,
     "category": "laptops",
     "available": false
+  },
+  {
+    "id": 1773933802378,
+    "name": "iPhone",
+    "description": "Apple smartphone",
+    "price": 1000,
+    "category": "electronics",
+    "available": true
+  },
+  {
+    "id": 1773933963372,
+    "name": "iPhone",
+    "description": "Apple smartphone",
+    "price": 9991111,
+    "category": "electronics",
+    "available": true
+  },
+  {
+    "id": 1773946396874,
+    "name": "Test",
+    "description": "Test",
+    "price": 100,
+    "category": "test",
+    "available": true
   }
 ]
