@@ -1,13 +1,14 @@
 import { Request, Response } from "express";
-import { cart } from "../data/cart";
-import { readJSON } from "../utils/file.util";
+import { readJSON, writeJSON } from "../utils/file.util";
 
-const PRODUCTS_PATH = "../data/products.json";
+const CART_PATH = "../data/cart.json";
 
 export const getCart = (req: Request, res: Response) => {
   const userId = req.userId!;
 
-  const userCart = cart.filter(item => item.userId === userId);
+  const cart = readJSON(CART_PATH);
+
+  const userCart = cart.filter((item: any) => item.userId === userId);
 
   res.json(userCart);
 };
@@ -20,22 +21,18 @@ export const addToCart = (req: Request, res: Response) => {
     return res.status(400).json({ message: "productId required" });
   }
 
-  if (quantity && quantity < 1) {
-    return res.status(400).json({ message: "Invalid quantity" });
-  } 
-  const products = readJSON(PRODUCTS_PATH);
-  const productExists = products.find((p: any) => p.id === productId);
-
-  if (!productExists) {
-    return res.status(404).json({ message: "Product not found" });
-  }
+  const cart = readJSON(CART_PATH);
 
   const existing = cart.find(
-    item => item.productId === productId && item.userId === userId
+    (item: any) =>
+      item.productId === productId && item.userId === userId
   );
 
   if (existing) {
     existing.quantity += quantity || 1;
+
+    writeJSON(CART_PATH, cart);
+
     return res.json(existing);
   }
 
@@ -48,6 +45,8 @@ export const addToCart = (req: Request, res: Response) => {
 
   cart.push(newItem);
 
+  writeJSON(CART_PATH, cart);
+
   res.status(201).json(newItem);
 };
 
@@ -55,12 +54,15 @@ export const updateCart = (req: Request, res: Response) => {
   const userId = req.userId!;
   const { productId, quantity } = req.body;
 
-  if (quantity === undefined || quantity < 1) {
-    return res.status(400).json({ message: "quantity must be >= 1" });
+  if (quantity === undefined) {
+    return res.status(400).json({ message: "quantity required" });
   }
 
+  const cart = readJSON(CART_PATH);
+
   const item = cart.find(
-    i => i.productId === productId && i.userId === userId
+    (i: any) =>
+      i.productId === productId && i.userId === userId
   );
 
   if (!item) {
@@ -69,6 +71,8 @@ export const updateCart = (req: Request, res: Response) => {
 
   item.quantity = quantity;
 
+  writeJSON(CART_PATH, cart);
+
   res.json(item);
 };
 
@@ -76,8 +80,10 @@ export const deleteFromCart = (req: Request, res: Response) => {
   const userId = req.userId!;
   const id = Number(req.params.id);
 
+  const cart = readJSON(CART_PATH);
+
   const index = cart.findIndex(
-    item => item.id === id && item.userId === userId
+    (item: any) => item.id === id && item.userId === userId
   );
 
   if (index === -1) {
@@ -86,16 +92,7 @@ export const deleteFromCart = (req: Request, res: Response) => {
 
   cart.splice(index, 1);
 
+  writeJSON(CART_PATH, cart);
+
   res.json({ message: "Removed from cart" });
-}; 
-export const clearCart = (req: Request, res: Response) => {
-  const userId = req.userId!;
-
-  for (let i = cart.length - 1; i >= 0; i--) {
-    if (cart[i].userId === userId) {
-      cart.splice(i, 1);
-    }
-  }
-
-  res.json({ message: "Cart cleared" });
 };
