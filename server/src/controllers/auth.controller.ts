@@ -11,7 +11,7 @@ export const register = (req: Request, res: Response) => {
   const users: User[] = readJSON(USERS_PATH);
 
   const existingUser = users.find(u => u.email === email);
-
+  
   if (existingUser) {
     return res.status(400).json({ message: "User already exists" });
   }
@@ -22,10 +22,16 @@ export const register = (req: Request, res: Response) => {
     password,
   };
 
-  users.push(newUser);
-  writeJSON(USERS_PATH, users);
+ users.push(newUser);
+writeJSON(USERS_PATH, users);
 
-  res.status(201).json(newUser);
+res.cookie("userId", newUser.id, {
+  httpOnly: true,
+  maxAge: 10 * 60 * 1000
+});
+
+res.status(201).json(newUser);
+
 };
 
 
@@ -43,6 +49,11 @@ export const login = (req: Request, res: Response) => {
   if (user.password !== password) {
     return res.status(401).json({ message: "Invalid credentials" });
   }
+  res.cookie("userId", user.id, {
+  httpOnly: true,
+  maxAge: 10 * 60 * 1000
+});
 
+res.json(user);
   res.json(user);
 };
