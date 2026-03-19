@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { users } from "../data/users";
+import { users } from "../data/users.data";
 
 export const register = (req: Request, res: Response) => {
   const { email, password } = req.body;
