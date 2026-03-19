@@ -1,3 +1,4 @@
+/// <reference path="./types/express.d.ts" />
 import express from "express";
 import productsRoutes from "./routes/products.routes";
 import usersRoutes from "./routes/users.routes";
