@@ -1,8 +1,14 @@
 import { Request, Response } from "express";
-import { users } from "../data/users.data";
+import { readJSON, writeJSON } from "../utils/file.util";
+import { User } from "../types/user";
+import path from "path";
+
+const USERS_PATH = path.join(__dirname, "../data/users.json");
 
 export const register = (req: Request, res: Response) => {
   const { email, password } = req.body;
+
+  const users: User[] = readJSON(USERS_PATH);
 
   const existingUser = users.find(u => u.email === email);
 
@@ -10,19 +16,23 @@ export const register = (req: Request, res: Response) => {
     return res.status(400).json({ message: "User already exists" });
   }
 
-  const newUser = {
+  const newUser: User = {
     id: Date.now(),
     email,
     password,
   };
 
   users.push(newUser);
+  writeJSON(USERS_PATH, users);
 
   res.status(201).json(newUser);
 };
 
+
 export const login = (req: Request, res: Response) => {
   const { email, password } = req.body;
+
+  const users: User[] = readJSON(USERS_PATH);
 
   const user = users.find(u => u.email === email);
 
