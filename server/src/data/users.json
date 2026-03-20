@@ -10,9 +10,13 @@
     "password": "123456"
   },
   {
-    "id": 1773961471011,
     "id": 1773961141876,
     "email": "user1@mail.com",
     "password": "123456"
+  },
+  {
+    "id": 1773969469862,
+    "email": "kisel@gmail.com",
+    "password": "12345667899"
   }
 ]
