@@ -2,49 +2,178 @@
   {
     "id": 1,
     "name": "iPhone 13",
-    "description": "Apple smartphone",
+    "description": "Смартфон Apple с OLED дисплеем и мощным процессором A15",
     "price": 800,
-    "category": "phones",
-    "available": true
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/iphone1.jpg",
+    "rating": 4.7,
+    "stock": 12
   },
   {
     "id": 2,
-    "name": "Samsung Galaxy S21",
-    "description": "Samsung smartphone",
-    "price": 700,
-    "category": "phones",
-    "available": true
+    "name": "iPhone 14",
+    "description": "Улучшенная камера и автономность, процессор A15 Bionic",
+    "price": 900,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/iphone2.png",
+    "rating": 4.8,
+    "stock": 8
   },
   {
     "id": 3,
-    "name": "MacBook Air",
-    "description": "Apple laptop",
-    "price": 1200,
-    "category": "laptops",
-    "available": false
+    "name": "iPhone 15",
+    "description": "Новый дизайн, USB-C и мощный чип A16",
+    "price": 1100,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/iphone3.png",
+    "rating": 4.9,
+    "stock": 5
   },
   {
-    "id": 1773933802378,
-    "name": "iPhone",
-    "description": "Apple smartphone",
-    "price": 1000,
-    "category": "electronics",
-    "available": true
+    "id": 4,
+    "name": "iPhone 15 Pro",
+    "description": "Титановый корпус и топовая производительность",
+    "price": 1300,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/iphone4.png",
+    "rating": 5.0,
+    "stock": 3
   },
   {
-    "id": 1773933963372,
-    "name": "iPhone",
-    "description": "Apple smartphone",
-    "price": 9991111,
-    "category": "electronics",
-    "available": true
+    "id": 5,
+    "name": "iPhone 12",
+    "description": "Доступный iPhone с хорошей производительностью",
+    "price": 600,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/iphone5.png",
+    "rating": 4.5,
+    "stock": 15
   },
   {
-    "id": 1773946396874,
-    "name": "Test",
-    "description": "Test",
-    "price": 100,
-    "category": "test",
-    "available": true
+    "id": 6,
+    "name": "iPhone SE (2022)",
+    "description": "Компактный и мощный смартфон с Touch ID",
+    "price": 500,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/iphone6.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 7,
+    "name": "Apple AirPods Max",
+    "description": "беспроводные наушники с микрофоном, мониторные (охватывающие), портативные, съёмный аудиокабель, Bluetooth 5.0, быстрая зарядка, время работы 20 ч, активное шумоподавление",
+    "price": 1600,
+    "category": "pods",
+    "available": true,
+    "image": "/images/airpods1.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 8,
+    "name": "Наушники Apple AirPods Max",
+    "description": "беспроводные наушники с микрофоном, мониторные (охватывающие), портативные, съёмный аудиокабель, Bluetooth 5.0, быстрая зарядка, время работы 20 ч, активное шумоподавление",
+    "price": 1550,
+    "category": "pods",
+    "available": true,
+    "image": "/images/airpods2.png",
+    "rating": 4.3,
+    "stock": 10
   }
+   ,{
+    "id": 9,
+    "name": "Наушники Apple AirPods 4 ",
+    "description": "беспроводные наушники с микрофоном, внутриканальные, портативные, полностью беспроводные (TWS), Bluetooth 5.3, быстрая зарядка, время работы 8 ч, с кейсом 24 ч, активное шумоподавление",
+    "price": 450,
+    "category": "pods",
+    "available": true,
+    "image": "/images/airpods3.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 10,
+    "name": "AirPods Pro",
+    "description": "беспроводные наушники с микрофоном, вставные, портативные, полностью беспроводные (TWS), Bluetooth 5.3, быстрая зарядка, время работы 5 ч, с кейсом 30 ч, активное шумоподавление",
+    "price": 590,
+    "category": "pods",
+    "available": true,
+    "image": "/images/airpods4.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 11,
+    "name": "Ноутбук Apple MacBook Pro 14.2 M5 2025 MDE34",
+    "description": "14.2 3024 x 1964, IPS с miniLED подсветкой, 120 Гц, Apple M5 (10 ядер), 24 ГБ LPDDR5X, SSD 1024 ГБ, видеокарта встроенная, Mac OS, цвет крышки темно-серый, аккумулятор 72.4 Вт·ч",
+    "price": 1488,
+    "category": "laptops",
+    "available": true,
+    "image": "/images/macbook1.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 12,
+    "name": "Ноутбук Apple MacBook Neo 13 A18 Pro 2026 MHFJ4",
+    "description": "13.0 2408 x 1506, IPS, 60 Гц, Apple A18 Pro, 8 ГБ, SSD 512 ГБ, видеокарта встроенная, Mac OS, цвет крышки розовый, аккумулятор 36.5 Вт·ч",
+    "price": 2500,
+    "category": "laptops",
+    "available": true,
+    "image": "/images/macbook2.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 13,
+    "name": "Ноутбук Apple MacBook Pro 14.2 M5 2025 MDE04",
+    "description": "14.2 3024 x 1964, IPS с miniLED подсветкой, 120 Гц, Apple M5 (10 ядер), 16 ГБ LPDDR5X, SSD 512 ГБ, видеокарта встроенная, Mac OS, цвет крышки темно-серый, аккумулятор 72.4 Вт·ч",
+    "price": 3500,
+    "category": "laptops",
+    "available": true,
+    "image": "/images/macbook3.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 14,
+    "name": "Apple MacBook Neo 13",
+    "description": "13.0 2408 x 1506, IPS, 60 Гц, Apple A18 Pro, 8 ГБ, SSD 256 ГБ, видеокарта встроенная, Mac OS, цвет крышки темно-синий, аккумулятор 36.5 Вт·ч",
+    "price": 1700,
+    "category": "laptops",
+    "available": true,
+    "image": "/images/macbook4.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+    {
+    "id": 15,
+    "name": "Беспроводное зарядное устройство для Iphone",
+    "description": "Выходное напряжение 14.85 вольт, Выходной ток 3.05 ампер, Выходная мощность 45 ватт, Тип штекера magsafe 2",
+    "price": 550,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/1.png",
+    "rating": 4.3,
+    "stock": 10
+  },
+   {
+    "id": 16,
+    "name": "Зарядное устройство для MacBook",
+    "description": "Выходное напряжение 14.85 вольт, Выходной ток 3.05 ампер, Выходная мощность 45 ватт, Тип штекера magsafe 2",
+    "price": 500,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/2.png",
+    "rating": 4.3,
+    "stock": 10
+  }
+
 ]

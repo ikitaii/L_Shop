@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  text-transform: uppercase;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background: black;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}

@@ -40,16 +40,28 @@ export const getProducts = (req: Request, res: Response) => {
 export const createProduct = (req: Request, res: Response) => {
   const products: Product[] = readJSON(PRODUCTS_PATH);
 
-  const { name, description, price, category, available } = req.body;
+const {
+  name,
+  description,
+  price,
+  category,
+  available,
+  image,
+  rating,
+  stock,
+} = req.body;
 
-  const newProduct: Product = {
-    id: Date.now(),
-    name,
-    description,
-    price: Number(price),
-    category,
-    available: available === true || available === "true",
-  };
+ const newProduct: Product = {
+  id: Date.now(),
+  name,
+  description,
+  price,
+  category,
+  available,
+  image,     
+  rating,    
+  stock,     
+};
 
   products.push(newProduct);
   writeJSON(PRODUCTS_PATH, products);

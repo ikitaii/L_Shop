@@ -1,98 +1,128 @@
 import { Request, Response } from "express";
-import { readJSON, writeJSON } from "../utils/file.util";
+import fs from "fs";
+import path from "path";
 
-const CART_PATH = "../data/cart.json";
+const cartPath = path.join(__dirname, "../data/cart.json");
+const productsPath = path.join(__dirname, "../data/products.json");
+
+const readJSON = (filePath: string) => {
+  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+};
+
+const writeJSON = (filePath: string, data: any) => {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+};
 
 export const getCart = (req: Request, res: Response) => {
-  const userId = req.userId!;
+  try {
+    const userId = (req as any).userId || 1;
 
-  const cart = readJSON(CART_PATH);
+    const cart = readJSON(cartPath);
+    const products = readJSON(productsPath);
 
-  const userCart = cart.filter((item: any) => item.userId === userId);
+    const userCart = cart
+      .filter((item: any) => item.userId === userId)
+      .map((item: any) => {
+        const product = products.find((p: any) => p.id === item.productId);
 
-  res.json(userCart);
+        return {
+  id: item.id,
+  productId: item.productId,
+  quantity: item.quantity,
+  name: product?.name,
+  price: product?.price,
+  image: product?.image,  
+};
+      });
+
+    res.json(userCart);
+  } catch (err) {
+    res.status(500).json({ message: "Ошибка корзины" });
+  }
 };
 
 export const addToCart = (req: Request, res: Response) => {
-  const userId = req.userId!;
-  const { productId, quantity } = req.body;
+  try {
+    const userId = (req as any).userId || 1;
+    const { productId, quantity } = req.body;
+    const qty = quantity || 1;
 
-  if (!productId) {
-    return res.status(400).json({ message: "productId required" });
+    if (!productId) {
+      return res.status(400).json({ message: "Нет productId" });
+    }
+
+    const cart = readJSON(cartPath);
+    const products = readJSON(productsPath);  
+
+    const product = products.find((p: any) => p.id === productId);   
+
+    if (!product) {
+      return res.status(404).json({ message: "Товар не найден" });
+    }
+
+    const existing = cart.find(
+      (item: any) =>
+        item.userId === userId && item.productId === productId
+    );
+
+    if (existing) {
+      existing.quantity += qty;
+    } else {
+      cart.push({
+        id: Date.now(),
+        userId,
+        productId,
+        name: product.name,      
+        price: product.price,    
+        image: product.image,    
+        quantity: qty,
+      });
+    }
+
+    writeJSON(cartPath, cart);
+
+    res.json({ message: "Добавлено" });
+  } catch (err) {
+    res.status(500).json({ message: "Ошибка добавления" });
   }
-
-  const cart = readJSON(CART_PATH);
-
-  const existing = cart.find(
-    (item: any) =>
-      item.productId === productId && item.userId === userId
-  );
-
-  if (existing) {
-    existing.quantity += quantity || 1;
-
-    writeJSON(CART_PATH, cart);
-
-    return res.json(existing);
-  }
-
-  const newItem = {
-    id: Date.now(),
-    userId,
-    productId,
-    quantity: quantity || 1,
-  };
-
-  cart.push(newItem);
-
-  writeJSON(CART_PATH, cart);
-
-  res.status(201).json(newItem);
 };
+
 
 export const updateCart = (req: Request, res: Response) => {
-  const userId = req.userId!;
-  const { productId, quantity } = req.body;
+  try {
+    const id = Number(req.params.id); 
+    const { quantity } = req.body;
 
-  if (quantity === undefined) {
-    return res.status(400).json({ message: "quantity required" });
+    const cart = readJSON(cartPath);
+
+    const item = cart.find((i: any) => i.id === id);
+
+    if (!item) {
+      return res.status(404).json({ message: "Товар не найден" });
+    }
+
+    item.quantity = quantity;
+
+    writeJSON(cartPath, cart);
+
+    res.json({ message: "Обновлено" });
+  } catch (err) {
+    res.status(500).json({ message: "Ошибка обновления" });
   }
-
-  const cart = readJSON(CART_PATH);
-
-  const item = cart.find(
-    (i: any) =>
-      i.productId === productId && i.userId === userId
-  );
-
-  if (!item) {
-    return res.status(404).json({ message: "Item not found" });
-  }
-
-  item.quantity = quantity;
-
-  writeJSON(CART_PATH, cart);
-
-  res.json(item);
 };
 
-export const deleteFromCart = (req: Request, res: Response) => {
-  const userId = req.userId!;
-  const id = Number(req.params.id);
 
-  const cart = readJSON(CART_PATH);
+export const removeFromCart = (req: Request, res: Response) => {
+  try {
+    const id = Number(req.params.id);
 
-  const index = cart.findIndex(
-    (item: any) => item.id === id && item.userId === userId
-  );
+    let cart = readJSON(cartPath);
+    cart = cart.filter((item: any) => item.id !== id);
 
-  if (index === -1) {
-    return res.status(404).json({ message: "Item not found" });
+    writeJSON(cartPath, cart);
+
+    res.json({ message: "Удалено" });
+  } catch (err) {
+    res.status(500).json({ message: "Ошибка удаления" });
   }
-
-  cart.splice(index, 1);
-
-  writeJSON(CART_PATH, cart);
-
-  res.json({ message: "Removed from cart" });
 };

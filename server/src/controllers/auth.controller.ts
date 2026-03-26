@@ -33,6 +33,22 @@ res.cookie("userId", newUser.id, {
 res.status(201).json(newUser);
 
 };
+export const me = (req: Request, res: Response) => {
+  const userId = req.cookies.userId;
+
+  if (!userId) {
+    return res.status(401).json({ message: "Не авторизован" });
+  }
+
+  const users: User[] = readJSON(USERS_PATH);
+  const user = users.find(u => u.id === Number(userId));
+
+  if (!user) {
+    return res.status(401).json({ message: "Пользователь не найден" });
+  }
+
+  res.json(user);
+};
 
 
 export const login = (req: Request, res: Response) => {
@@ -49,11 +65,10 @@ export const login = (req: Request, res: Response) => {
   if (user.password !== password) {
     return res.status(401).json({ message: "Invalid credentials" });
   }
-  res.cookie("userId", user.id, {
+res.cookie("userId", user.id, {
   httpOnly: true,
   maxAge: 10 * 60 * 1000
 });
 
-res.json(user);
-  res.json(user);
+return res.json(user);
 };
