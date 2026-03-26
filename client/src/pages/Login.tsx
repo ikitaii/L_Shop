@@ -1,17 +1,20 @@
 import { useState } from "react";
+import "../styles/auth.css";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+
     try {
       const res = await fetch("http://localhost:3000/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: "include", // 🔥 КЛЮЧЕВОЕ
+        credentials: "include",
         body: JSON.stringify({
           email,
           password,
@@ -33,27 +36,25 @@ export const Login = () => {
   };
 
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>Вход / Регистрация</h1>
+    <div className="auth-page">
+      <form className="auth-form" onSubmit={handleLogin}>
+        <h2>Вход</h2>
 
-      <input
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+        <input
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-      <br /><br />
+        <input
+          type="password"
+          placeholder="Пароль"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
-      <input
-        placeholder="Пароль"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-
-      <br /><br />
-
-      <button onClick={handleLogin}>Войти</button>
+        <button type="submit">Войти</button>
+      </form>
     </div>
   );
 };

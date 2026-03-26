@@ -49,6 +49,16 @@ export const me = (req: Request, res: Response) => {
 
   res.json(user);
 };
+export const logout = (req: Request, res: Response) => {
+  res.cookie("userId", "", {
+    httpOnly: true,
+    expires: new Date(0),  
+    path: "/",
+  });
+
+  res.json({ message: "Выход выполнен" });
+};
+
 
 
 export const login = (req: Request, res: Response) => {

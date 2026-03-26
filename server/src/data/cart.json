@@ -6,15 +6,24 @@
     "name": "iPhone 14",
     "price": 900,
     "image": "/images/iphone2.png",
-    "quantity": 1
+    "quantity": 13
   },
   {
-    "id": 1774557267660,
+    "id": 1774564102953,
     "userId": 1,
     "productId": 3,
     "name": "iPhone 15",
     "price": 1100,
     "image": "/images/iphone3.png",
-    "quantity": 1
+    "quantity": 3
+  },
+  {
+    "id": 1774564104460,
+    "userId": 1,
+    "productId": 8,
+    "name": "Наушники Apple AirPods Max",
+    "price": 1550,
+    "image": "/images/airpods2.png",
+    "quantity": 3
   }
 ]
