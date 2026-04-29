@@ -1,29 +1,38 @@
 [
   {
-    "id": 1774557266562,
+    "id": 1777454412110,
     "userId": 1,
-    "productId": 2,
-    "name": "iPhone 14",
-    "price": 900,
-    "image": "/images/iphone2.png",
-    "quantity": 13
+    "productId": 6,
+    "name": "iPhone SE (2022)",
+    "price": 500,
+    "image": "/images/iphone6.png",
+    "quantity": 2
   },
   {
-    "id": 1774564102953,
-    "userId": 1,
-    "productId": 3,
-    "name": "iPhone 15",
-    "price": 1100,
-    "image": "/images/iphone3.png",
-    "quantity": 3
-  },
-  {
-    "id": 1774564104460,
+    "id": 1777454434321,
     "userId": 1,
     "productId": 8,
     "name": "Наушники Apple AirPods Max",
     "price": 1550,
     "image": "/images/airpods2.png",
-    "quantity": 3
+    "quantity": 1
+  },
+  {
+    "id": 1777454436543,
+    "userId": 1,
+    "productId": 11,
+    "name": "Ноутбук Apple MacBook Pro 14.2 M5 2025 MDE34",
+    "price": 1488,
+    "image": "/images/macbook1.png",
+    "quantity": 1
+  },
+  {
+    "id": 1777454438211,
+    "userId": 1,
+    "productId": 9,
+    "name": "Наушники Apple AirPods 4 ",
+    "price": 450,
+    "image": "/images/airpods3.png",
+    "quantity": 1
   }
 ]
