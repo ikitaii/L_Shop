@@ -1,0 +1,29 @@
+.products-category-filter {
+  padding: 6px 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  border-bottom: 1px solid #ececec;
+}
+
+.products-category-filter button {
+  background: transparent;
+  color: #222;
+  padding: 6px 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.products-category-filter button:hover {
+  background: transparent;
+  color: #111;
+}
+
+.products-category-filter button.active {
+  border-bottom-color: #111;
+}

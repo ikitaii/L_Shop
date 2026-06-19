@@ -1,9 +1,6 @@
 import { Request, Response } from "express";
 import fs from "fs";
-import path from "path";
-
-const cartPath = path.join(__dirname, "../data/cart.json");
-const productsPath = path.join(__dirname, "../data/products.json");
+import { CART_PATH, PRODUCTS_PATH } from "../constants/paths";
 
 const readJSON = (filePath: string) => {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
@@ -15,10 +12,13 @@ const writeJSON = (filePath: string, data: any) => {
 
 export const getCart = (req: Request, res: Response) => {
   try {
-    const userId = (req as any).userId || 1;
+    const userId = Number(req.cookies?.userId);
+    if (!userId) {
+      return res.json([]);
+    }
 
-    const cart = readJSON(cartPath);
-    const products = readJSON(productsPath);
+    const cart = readJSON(CART_PATH);
+    const products = readJSON(PRODUCTS_PATH);
 
     const userCart = cart
       .filter((item: any) => item.userId === userId)
@@ -43,7 +43,10 @@ export const getCart = (req: Request, res: Response) => {
 
 export const addToCart = (req: Request, res: Response) => {
   try {
-    const userId = (req as any).userId || 1;
+    const userId = Number(req.cookies?.userId);
+    if (!userId) {
+      return res.status(401).json({ message: "Не авторизован" });
+    }
     const { productId, quantity } = req.body;
     const qty = quantity || 1;
 
@@ -51,8 +54,8 @@ export const addToCart = (req: Request, res: Response) => {
       return res.status(400).json({ message: "Нет productId" });
     }
 
-    const cart = readJSON(cartPath);
-    const products = readJSON(productsPath);  
+    const cart = readJSON(CART_PATH);
+    const products = readJSON(PRODUCTS_PATH);  
 
     const product = products.find((p: any) => p.id === productId);   
 
@@ -79,7 +82,7 @@ export const addToCart = (req: Request, res: Response) => {
       });
     }
 
-    writeJSON(cartPath, cart);
+    writeJSON(CART_PATH, cart);
 
     res.json({ message: "Добавлено" });
   } catch (err) {
@@ -90,12 +93,17 @@ export const addToCart = (req: Request, res: Response) => {
 
 export const updateCart = (req: Request, res: Response) => {
   try {
+    const userId = Number(req.cookies?.userId);
+    if (!userId) {
+      return res.status(401).json({ message: "Не авторизован" });
+    }
+
     const id = Number(req.params.id); 
     const { quantity } = req.body;
 
-    const cart = readJSON(cartPath);
+    const cart = readJSON(CART_PATH);
 
-    const item = cart.find((i: any) => i.id === id);
+    const item = cart.find((i: any) => i.id === id && i.userId === userId);
 
     if (!item) {
       return res.status(404).json({ message: "Товар не найден" });
@@ -103,7 +111,7 @@ export const updateCart = (req: Request, res: Response) => {
 
     item.quantity = quantity;
 
-    writeJSON(cartPath, cart);
+    writeJSON(CART_PATH, cart);
 
     res.json({ message: "Обновлено" });
   } catch (err) {
@@ -114,12 +122,17 @@ export const updateCart = (req: Request, res: Response) => {
 
 export const removeFromCart = (req: Request, res: Response) => {
   try {
+    const userId = Number(req.cookies?.userId);
+    if (!userId) {
+      return res.status(401).json({ message: "Не авторизован" });
+    }
+
     const id = Number(req.params.id);
 
-    let cart = readJSON(cartPath);
-    cart = cart.filter((item: any) => item.id !== id);
+    let cart = readJSON(CART_PATH);
+    cart = cart.filter((item: any) => !(item.id === id && item.userId === userId));
 
-    writeJSON(cartPath, cart);
+    writeJSON(CART_PATH, cart);
 
     res.json({ message: "Удалено" });
   } catch (err) {

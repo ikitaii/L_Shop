@@ -1,0 +1,142 @@
+[
+  {
+    "userId": 1781540005639,
+    "preferences": [
+      {
+        "tag": "apple",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:13:25.654Z"
+      },
+      {
+        "tag": "phone",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:13:25.654Z"
+      },
+      {
+        "tag": "oled",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:13:25.654Z"
+      }
+    ]
+  },
+  {
+    "userId": 1781540052786,
+    "preferences": [
+      {
+        "tag": "apple",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:14:12.804Z"
+      },
+      {
+        "tag": "phone",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:14:12.804Z"
+      },
+      {
+        "tag": "oled",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:14:12.804Z"
+      }
+    ]
+  },
+  {
+    "userId": 1781540186754,
+    "preferences": [
+      {
+        "tag": "apple",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:16:26.774Z"
+      },
+      {
+        "tag": "phone",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:16:26.774Z"
+      },
+      {
+        "tag": "oled",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:16:26.774Z"
+      }
+    ]
+  },
+  {
+    "userId": 1781541321984,
+    "preferences": [
+      {
+        "tag": "apple",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:35:22.003Z"
+      },
+      {
+        "tag": "phone",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:35:22.003Z"
+      },
+      {
+        "tag": "oled",
+        "weight": 1,
+        "updatedAt": "2026-06-15T16:35:22.003Z"
+      }
+    ]
+  },
+  {
+    "userId": 1781547646721,
+    "preferences": [
+      {
+        "tag": "apple",
+        "weight": 1,
+        "updatedAt": "2026-06-15T18:20:46.748Z"
+      },
+      {
+        "tag": "phone",
+        "weight": 1,
+        "updatedAt": "2026-06-15T18:20:46.748Z"
+      },
+      {
+        "tag": "oled",
+        "weight": 1,
+        "updatedAt": "2026-06-15T18:20:46.748Z"
+      }
+    ]
+  },
+  {
+    "userId": 1781558161429,
+    "preferences": [
+      {
+        "tag": "apple",
+        "weight": 1,
+        "updatedAt": "2026-06-15T21:16:01.445Z"
+      },
+      {
+        "tag": "phone",
+        "weight": 1,
+        "updatedAt": "2026-06-15T21:16:01.445Z"
+      },
+      {
+        "tag": "oled",
+        "weight": 1,
+        "updatedAt": "2026-06-15T21:16:01.445Z"
+      }
+    ]
+  },
+  {
+    "userId": 1781852492343,
+    "preferences": [
+      {
+        "tag": "apple",
+        "weight": 1,
+        "updatedAt": "2026-06-19T07:01:32.357Z"
+      },
+      {
+        "tag": "phone",
+        "weight": 1,
+        "updatedAt": "2026-06-19T07:01:32.357Z"
+      },
+      {
+        "tag": "oled",
+        "weight": 1,
+        "updatedAt": "2026-06-19T07:01:32.357Z"
+      }
+    ]
+  }
+]
