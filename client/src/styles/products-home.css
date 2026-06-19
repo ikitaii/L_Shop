@@ -1,0 +1,52 @@
+.products-home-shell .products {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.products-home-shell .products-grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.products-home-shell .product-card {
+  min-height: 390px;
+  padding: 12px;
+  gap: 4px;
+}
+
+.products-home-shell .product-card img {
+  height: 165px;
+}
+
+.products-home-shell .product-name {
+  min-height: 40px;
+}
+
+.products-home-shell .products-controls {
+  gap: 6px;
+  max-width: none;
+  justify-content: flex-start;
+}
+
+.products-home-shell .products input {
+  width: 750px;
+  max-width: 100%;
+}
+
+.products-home-shell .products select {
+  min-width: 170px;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding: 14px 36px 14px 14px;
+  line-height: 1.2;
+}
+
+.products-home-shell .products-extended-page .products-category-filter {
+  margin-top: 2px;
+  margin-bottom: 14px;
+}

@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import type { User } from "../types/User";
+import { BASE_URL } from "../config";
 
 export const useUser = () => {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
 
   const loadUser = async () => {
     try {
-      const res = await fetch("http://localhost:3000/auth/me", {
+      const res = await fetch(`${BASE_URL}/auth/me`, {
         credentials: "include",
       });
 

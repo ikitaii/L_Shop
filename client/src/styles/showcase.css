@@ -1,0 +1,33 @@
+.showcase-page .products-controls {
+  gap: 6px;
+  max-width: none;
+  justify-content: flex-start;
+}
+
+.showcase-page .products-controls input {
+  width: 750px;
+  max-width: 100%;
+}
+
+.showcase-page .products-grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.showcase-page .product-card {
+  min-height: 430px;
+  padding: 12px;
+  gap: 6px;
+}
+
+.showcase-page .product-card img {
+  height: 165px;
+}
+
+.showcase-page .product-name {
+  min-height: 68px;
+  font-size: 16px;
+  line-height: 1.15;
+  font-weight: 500;
+}

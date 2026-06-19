@@ -7,5 +7,6 @@ export type Product = {
   image: string;
   rating: number;
   stock: number;
-  available: boolean; 
+  available: boolean;
+  tags?: string[];
 };

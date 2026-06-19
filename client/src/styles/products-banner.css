@@ -1,0 +1,76 @@
+.products-banner {
+  position: relative;
+  width: 100%;
+  padding: 14px 50px 8px;
+}
+
+.products-banner-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(460px, 1fr);
+  gap: 16px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.products-banner-track::-webkit-scrollbar {
+  display: none;
+}
+
+.products-banner-item {
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  height: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.products-banner-item:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.products-banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transform: none;
+  display: block;
+}
+
+.products-banner-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  cursor: pointer;
+}
+
+.products-banner-nav-left {
+  left: 8px;
+}
+
+.products-banner-nav-right {
+  right: 8px;
+}
+
+@media (max-width: 900px) {
+  .products-banner {
+    padding: 12px 50px 8px;
+  }
+
+  .products-banner-track {
+    grid-auto-columns: minmax(420px, 1fr);
+  }
+}
