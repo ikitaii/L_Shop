@@ -1,9 +1,7 @@
 import { Request, Response } from "express";
 import { readJSON, writeJSON } from "../utils/file.util";
 import { User } from "../types/user";
-import path from "path";
-
-const USERS_PATH = path.join(__dirname, "../data/users.json");
+import { USERS_PATH } from "../constants/paths";
 
 export const register = (req: Request, res: Response) => {
   const { email, password } = req.body;

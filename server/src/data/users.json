@@ -1,32 +1,163 @@
 [
   {
     "id": 1773919920193,
-    "email": "test@mail.com",
-    "password": "123"
+    "email": "owner@com",
+    "password": "owner@com",
+    "role": "owner"
   },
   {
     "id": 1773947827240,
     "email": "test@test.com",
-    "password": "123456"
+    "password": "123456",
+    "role": "user"
   },
   {
     "id": 1773961141876,
     "email": "user1@mail.com",
-    "password": "123456"
+    "password": "123456",
+    "role": "user"
   },
   {
     "id": 1773969469862,
     "email": "kisel@gmail.com",
-    "password": "12345667899"
+    "password": "12345667899",
+    "role": "user"
   },
   {
     "id": 1777461927126,
     "email": "9090@7",
-    "password": "78907890"
+    "password": "78907890",
+    "role": "user"
   },
   {
     "id": 1777462160614,
     "email": "1212@er",
-    "password": "78907890"
+    "password": "78907890",
+    "role": "user"
+  },
+  {
+    "id": 1781540005591,
+    "email": "user-1781540005540@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540005639,
+    "email": "rec-1781540005628@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540005683,
+    "email": "review-1781540005671@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540052786,
+    "email": "rec-1781540052773@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540052839,
+    "email": "review-1781540052826@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540052999,
+    "email": "user-1781540052948@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540186754,
+    "email": "rec-1781540186739@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540186824,
+    "email": "review-1781540186803@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540187148,
+    "email": "user-1781540187103@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781540555020,
+    "email": "user67",
+    "password": "12121212"
+  },
+  {
+    "id": 1781541321984,
+    "email": "rec-1781541321969@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781541322039,
+    "email": "review-1781541322027@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781541322356,
+    "email": "user-1781541322314@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781547644123,
+    "email": "user-1781547643990@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781547646721,
+    "email": "rec-1781547646703@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781547646799,
+    "email": "review-1781547646780@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781558161392,
+    "email": "user-1781558161338@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781558161429,
+    "email": "rec-1781558161417@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781558161488,
+    "email": "review-1781558161471@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781558161532,
+    "email": "cart-1781558161517@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781599051982,
+    "email": "admin",
+    "password": "admin123"
+  },
+  {
+    "id": 1781852492297,
+    "email": "user-1781852492249@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781852492343,
+    "email": "rec-1781852492332@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781852492384,
+    "email": "review-1781852492376@mail.test",
+    "password": "123456"
+  },
+  {
+    "id": 1781852492398,
+    "email": "cart-1781852492387@mail.test",
+    "password": "123456"
   }
 ]

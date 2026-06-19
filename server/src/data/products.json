@@ -7,8 +7,13 @@
     "category": "smartphones",
     "available": true,
     "image": "/images/iphone1.jpg",
-    "rating": 4.7,
-    "stock": 12
+    "rating": 5,
+    "stock": 12,
+    "tags": [
+      "apple",
+      "phone",
+      "oled"
+    ]
   },
   {
     "id": 2,
@@ -18,8 +23,13 @@
     "category": "smartphones",
     "available": true,
     "image": "/images/iphone2.png",
-    "rating": 4.8,
-    "stock": 8
+    "rating": 1,
+    "stock": 8,
+    "tags": [
+      "apple",
+      "phone",
+      "camera"
+    ]
   },
   {
     "id": 3,
@@ -30,7 +40,12 @@
     "available": true,
     "image": "/images/iphone3.png",
     "rating": 4.9,
-    "stock": 5
+    "stock": 5,
+    "tags": [
+      "apple",
+      "phone",
+      "usb-c"
+    ]
   },
   {
     "id": 4,
@@ -40,8 +55,13 @@
     "category": "smartphones",
     "available": true,
     "image": "/images/iphone4.png",
-    "rating": 5.0,
-    "stock": 3
+    "rating": 5,
+    "stock": 3,
+    "tags": [
+      "apple",
+      "phone",
+      "pro"
+    ]
   },
   {
     "id": 5,
@@ -52,7 +72,12 @@
     "available": true,
     "image": "/images/iphone5.png",
     "rating": 4.5,
-    "stock": 15
+    "stock": 15,
+    "tags": [
+      "apple",
+      "phone",
+      "budget"
+    ]
   },
   {
     "id": 6,
@@ -63,9 +88,14 @@
     "available": true,
     "image": "/images/iphone6.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "apple",
+      "phone",
+      "compact"
+    ]
   },
-   {
+  {
     "id": 7,
     "name": "Apple AirPods Max",
     "description": "беспроводные наушники с микрофоном, мониторные (охватывающие), портативные, съёмный аудиокабель, Bluetooth 5.0, быстрая зарядка, время работы 20 ч, активное шумоподавление",
@@ -74,9 +104,14 @@
     "available": true,
     "image": "/images/airpods1.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "audio",
+      "wireless",
+      "anc"
+    ]
   },
-   {
+  {
     "id": 8,
     "name": "Наушники Apple AirPods Max",
     "description": "беспроводные наушники с микрофоном, мониторные (охватывающие), портативные, съёмный аудиокабель, Bluetooth 5.0, быстрая зарядка, время работы 20 ч, активное шумоподавление",
@@ -85,9 +120,14 @@
     "available": true,
     "image": "/images/airpods2.png",
     "rating": 4.3,
-    "stock": 10
-  }
-   ,{
+    "stock": 10,
+    "tags": [
+      "audio",
+      "wireless",
+      "music"
+    ]
+  },
+  {
     "id": 9,
     "name": "Наушники Apple AirPods 4 ",
     "description": "беспроводные наушники с микрофоном, внутриканальные, портативные, полностью беспроводные (TWS), Bluetooth 5.3, быстрая зарядка, время работы 8 ч, с кейсом 24 ч, активное шумоподавление",
@@ -96,9 +136,14 @@
     "available": true,
     "image": "/images/airpods3.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "audio",
+      "wireless",
+      "tws"
+    ]
   },
-   {
+  {
     "id": 10,
     "name": "AirPods Pro",
     "description": "беспроводные наушники с микрофоном, вставные, портативные, полностью беспроводные (TWS), Bluetooth 5.3, быстрая зарядка, время работы 5 ч, с кейсом 30 ч, активное шумоподавление",
@@ -107,9 +152,14 @@
     "available": true,
     "image": "/images/airpods4.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "audio",
+      "pro",
+      "anc"
+    ]
   },
-   {
+  {
     "id": 11,
     "name": "Ноутбук Apple MacBook Pro 14.2 M5 2025 MDE34",
     "description": "14.2 3024 x 1964, IPS с miniLED подсветкой, 120 Гц, Apple M5 (10 ядер), 24 ГБ LPDDR5X, SSD 1024 ГБ, видеокарта встроенная, Mac OS, цвет крышки темно-серый, аккумулятор 72.4 Вт·ч",
@@ -118,9 +168,14 @@
     "available": true,
     "image": "/images/macbook1.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "laptop",
+      "apple",
+      "pro"
+    ]
   },
-   {
+  {
     "id": 12,
     "name": "Ноутбук Apple MacBook Neo 13 A18 Pro 2026 MHFJ4",
     "description": "13.0 2408 x 1506, IPS, 60 Гц, Apple A18 Pro, 8 ГБ, SSD 512 ГБ, видеокарта встроенная, Mac OS, цвет крышки розовый, аккумулятор 36.5 Вт·ч",
@@ -129,9 +184,14 @@
     "available": true,
     "image": "/images/macbook2.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "laptop",
+      "apple",
+      "light"
+    ]
   },
-   {
+  {
     "id": 13,
     "name": "Ноутбук Apple MacBook Pro 14.2 M5 2025 MDE04",
     "description": "14.2 3024 x 1964, IPS с miniLED подсветкой, 120 Гц, Apple M5 (10 ядер), 16 ГБ LPDDR5X, SSD 512 ГБ, видеокарта встроенная, Mac OS, цвет крышки темно-серый, аккумулятор 72.4 Вт·ч",
@@ -140,9 +200,14 @@
     "available": true,
     "image": "/images/macbook3.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "laptop",
+      "apple",
+      "work"
+    ]
   },
-   {
+  {
     "id": 14,
     "name": "Apple MacBook Neo 13",
     "description": "13.0 2408 x 1506, IPS, 60 Гц, Apple A18 Pro, 8 ГБ, SSD 256 ГБ, видеокарта встроенная, Mac OS, цвет крышки темно-синий, аккумулятор 36.5 Вт·ч",
@@ -151,9 +216,14 @@
     "available": true,
     "image": "/images/macbook4.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "laptop",
+      "apple",
+      "budget"
+    ]
   },
-    {
+  {
     "id": 15,
     "name": "Беспроводное зарядное устройство для Iphone",
     "description": "Выходное напряжение 14.85 вольт, Выходной ток 3.05 ампер, Выходная мощность 45 ватт, Тип штекера magsafe 2",
@@ -162,9 +232,14 @@
     "available": true,
     "image": "/images/1.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "accessory",
+      "charger",
+      "iphone"
+    ]
   },
-   {
+  {
     "id": 16,
     "name": "Зарядное устройство для MacBook",
     "description": "Выходное напряжение 14.85 вольт, Выходной ток 3.05 ампер, Выходная мощность 45 ватт, Тип штекера magsafe 2",
@@ -173,7 +248,601 @@
     "available": true,
     "image": "/images/2.png",
     "rating": 4.3,
-    "stock": 10
+    "stock": 10,
+    "tags": [
+      "accessory",
+      "charger",
+      "macbook"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "AirPods Max Black",
+    "description": "Полноразмерные беспроводные наушники с активным шумоподавлением",
+    "price": 1490,
+    "category": "pods",
+    "available": true,
+    "image": "/images/products/AirPods Max Black.png",
+    "rating": 4.8,
+    "stock": 7,
+    "tags": [
+      "audio",
+      "wireless",
+      "anc"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "AirPods Max Gold",
+    "description": "Премиальные наушники Apple с пространственным звучанием",
+    "price": 1520,
+    "category": "pods",
+    "available": true,
+    "image": "/images/products/AirPods Max Gold.png",
+    "rating": 4.7,
+    "stock": 6,
+    "tags": [
+      "audio",
+      "wireless",
+      "premium"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "AirPods 2",
+    "description": "Компактные TWS-наушники для повседневного использования",
+    "price": 340,
+    "category": "pods",
+    "available": true,
+    "image": "/images/products/AirPods2.png",
+    "rating": 4.5,
+    "stock": 14,
+    "tags": [
+      "audio",
+      "tws",
+      "apple"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "AirTag",
+    "description": "Умная метка Apple для поиска вещей и аксессуаров",
+    "price": 120,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/AirTag.png",
+    "rating": 4.6,
+    "stock": 20,
+    "tags": [
+      "accessory",
+      "tracking",
+      "apple"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Apple iMac 24 Blue",
+    "description": "Моноблок Apple с экраном 24 дюйма и чипом M-серии",
+    "price": 2800,
+    "category": "desktop",
+    "available": true,
+    "image": "/images/products/Apple iMac 24_ Blue.png",
+    "rating": 4.7,
+    "stock": 4,
+    "tags": [
+      "desktop",
+      "apple",
+      "work"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Apple iPad 10 Silver",
+    "description": "Базовый планшет Apple для учебы, контента и коммуникаций",
+    "price": 980,
+    "category": "tablets",
+    "available": true,
+    "image": "/images/products/Apple iPad 10 Silver.png",
+    "rating": 4.6,
+    "stock": 9,
+    "tags": [
+      "tablet",
+      "apple",
+      "daily"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Apple iPad Air Grey",
+    "description": "Легкий и мощный планшет для работы и развлечений",
+    "price": 1250,
+    "category": "tablets",
+    "available": true,
+    "image": "/images/products/Apple iPad Air Grey.png",
+    "rating": 4.7,
+    "stock": 8,
+    "tags": [
+      "tablet",
+      "apple",
+      "air"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Apple iPad Pro White",
+    "description": "Планшет Pro-серии для профессиональных задач и творчества",
+    "price": 1890,
+    "category": "tablets",
+    "available": true,
+    "image": "/images/products/Apple iPad Pro White.png",
+    "rating": 4.9,
+    "stock": 5,
+    "tags": [
+      "tablet",
+      "pro",
+      "apple"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Apple MagSafe Duo Charger",
+    "description": "Двойная беспроводная зарядка для iPhone и Apple Watch",
+    "price": 360,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Apple MagSafe Duo Charger.png",
+    "rating": 4.5,
+    "stock": 12,
+    "tags": [
+      "charger",
+      "wireless",
+      "apple"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Apple Pencil Pro",
+    "description": "Фирменный стилус для iPad с высокой точностью ввода",
+    "price": 280,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Apple Pencil Pro.png",
+    "rating": 4.8,
+    "stock": 13,
+    "tags": [
+      "stylus",
+      "ipad",
+      "apple"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Apple Studio Display White",
+    "description": "Профессиональный дисплей Apple для рабочего места",
+    "price": 2400,
+    "category": "monitors",
+    "available": true,
+    "image": "/images/products/Apple Studio Display White.png",
+    "rating": 4.7,
+    "stock": 3,
+    "tags": [
+      "monitor",
+      "apple",
+      "studio"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Apple Vision",
+    "description": "Устройство смешанной реальности для медиа и приложений",
+    "price": 4200,
+    "category": "gadgets",
+    "available": true,
+    "image": "/images/products/Apple Vision.png",
+    "rating": 4.6,
+    "stock": 2,
+    "tags": [
+      "vision",
+      "xr",
+      "apple"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Apple Watch Graphite",
+    "description": "Смарт-часы с трекингом здоровья и уведомлениями",
+    "price": 640,
+    "category": "wearables",
+    "available": true,
+    "image": "/images/products/Apple Watch Graphite.png",
+    "rating": 4.7,
+    "stock": 10,
+    "tags": [
+      "watch",
+      "wearable",
+      "apple"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Apple Watch SE StarLight",
+    "description": "Доступные смарт-часы Apple Watch SE",
+    "price": 520,
+    "category": "wearables",
+    "available": true,
+    "image": "/images/products/Apple Watch SE StarLight.png",
+    "rating": 4.5,
+    "stock": 11,
+    "tags": [
+      "watch",
+      "se",
+      "apple"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Apple Watch SE White",
+    "description": "Легкие часы SE-серии в белом цвете",
+    "price": 510,
+    "category": "wearables",
+    "available": true,
+    "image": "/images/products/Apple Watch SE White.png",
+    "rating": 4.4,
+    "stock": 10,
+    "tags": [
+      "watch",
+      "se",
+      "apple"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Case for AirTag DarkRed",
+    "description": "Защитный чехол для AirTag из износостойкого материала",
+    "price": 45,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Case for AirTag DarkRed.png",
+    "rating": 4.3,
+    "stock": 25,
+    "tags": [
+      "case",
+      "airtag",
+      "accessory"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Case for iPad Black",
+    "description": "Чехол-книжка для iPad в черном цвете",
+    "price": 75,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Case for Ipad Black.png",
+    "rating": 4.4,
+    "stock": 18,
+    "tags": [
+      "case",
+      "ipad",
+      "black"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Case for iPad Gray",
+    "description": "Серый защитный чехол для iPad",
+    "price": 75,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Case for Ipad Gray.png",
+    "rating": 4.4,
+    "stock": 17,
+    "tags": [
+      "case",
+      "ipad",
+      "gray"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Case for iPad Green",
+    "description": "Прочный чехол для iPad в зеленом цвете",
+    "price": 78,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Case for Ipad Green.png",
+    "rating": 4.5,
+    "stock": 16,
+    "tags": [
+      "case",
+      "ipad",
+      "green"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Case for iPad Pink",
+    "description": "Розовый защитный чехол для iPad",
+    "price": 78,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Case for Ipad Pink.png",
+    "rating": 4.4,
+    "stock": 15,
+    "tags": [
+      "case",
+      "ipad",
+      "pink"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Case for iPad White",
+    "description": "Белый чехол для защиты и подставки iPad",
+    "price": 80,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Case for Ipad White.png",
+    "rating": 4.5,
+    "stock": 14,
+    "tags": [
+      "case",
+      "ipad",
+      "white"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "iPad Air Lavand",
+    "description": "Планшет iPad Air в лавандовом цвете",
+    "price": 1310,
+    "category": "tablets",
+    "available": true,
+    "image": "/images/products/iPad Air lavand.png",
+    "rating": 4.7,
+    "stock": 7,
+    "tags": [
+      "tablet",
+      "ipad",
+      "air"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "iPhone 14 Yellow",
+    "description": "Яркий iPhone 14 с отличной камерой и автономностью",
+    "price": 930,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/products/iPhone 14 Yellow.png",
+    "rating": 4.6,
+    "stock": 10,
+    "tags": [
+      "iphone",
+      "camera",
+      "yellow"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "iPhone 15 Pink",
+    "description": "iPhone 15 в розовом цвете с USB-C",
+    "price": 1140,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/products/iPhone 15 Pink.png",
+    "rating": 4.8,
+    "stock": 8,
+    "tags": [
+      "iphone",
+      "pink",
+      "usb-c"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "iPhone 17 Air Black",
+    "description": "Легкий флагман iPhone Air в черном цвете",
+    "price": 1490,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/products/iphone 17 air black.png",
+    "rating": 4.7,
+    "stock": 6,
+    "tags": [
+      "iphone",
+      "air",
+      "black"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "iPhone 17 Air White",
+    "description": "Смартфон iPhone Air в белом цвете",
+    "price": 1490,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/products/iphone 17 air white.png",
+    "rating": 4.7,
+    "stock": 6,
+    "tags": [
+      "iphone",
+      "air",
+      "white"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "iPhone 17 Pro Max",
+    "description": "Топовый смартфон с максимальной производительностью",
+    "price": 1790,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/products/iphone 17 pro max.png",
+    "rating": 4.9,
+    "stock": 5,
+    "tags": [
+      "iphone",
+      "pro",
+      "max"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "iPhone Air LightBlue",
+    "description": "Легкий iPhone Air в светло-голубом цвете",
+    "price": 1450,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/products/iPhone Air LightBlue.png",
+    "rating": 4.7,
+    "stock": 7,
+    "tags": [
+      "iphone",
+      "air",
+      "blue"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "iPhone SE 4 White",
+    "description": "Компактный iPhone SE нового поколения",
+    "price": 720,
+    "category": "smartphones",
+    "available": true,
+    "image": "/images/products/iPhone SE 4 White.png",
+    "rating": 4.4,
+    "stock": 12,
+    "tags": [
+      "iphone",
+      "se",
+      "compact"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Keyboard with a stand White",
+    "description": "Клавиатура с подставкой для планшета и ноутбука",
+    "price": 210,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Keyboard with a stand White.png",
+    "rating": 4.5,
+    "stock": 13,
+    "tags": [
+      "keyboard",
+      "stand",
+      "white"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Keyboard",
+    "description": "Компактная беспроводная клавиатура",
+    "price": 180,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Keyboard.png",
+    "rating": 4.4,
+    "stock": 15,
+    "tags": [
+      "keyboard",
+      "wireless",
+      "accessory"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Mouse",
+    "description": "Эргономичная мышь для работы и учебы",
+    "price": 120,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/Mouse.png",
+    "rating": 4.3,
+    "stock": 18,
+    "tags": [
+      "mouse",
+      "wireless",
+      "accessory"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "PowerBank Black",
+    "description": "Портативный аккумулятор для смартфонов и наушников",
+    "price": 140,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/PowerBank Black.png",
+    "rating": 4.4,
+    "stock": 22,
+    "tags": [
+      "powerbank",
+      "charger",
+      "black"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "PowerBank White",
+    "description": "Внешний аккумулятор с быстрой зарядкой",
+    "price": 140,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/PowerBank White.png",
+    "rating": 4.4,
+    "stock": 20,
+    "tags": [
+      "powerbank",
+      "charger",
+      "white"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "USB-C Power Adapter",
+    "description": "Сетевой адаптер питания USB-C для устройств Apple",
+    "price": 95,
+    "category": "accessories",
+    "available": true,
+    "image": "/images/products/USB-C Power Adapter.png",
+    "rating": 4.5,
+    "stock": 24,
+    "tags": [
+      "charger",
+      "usb-c",
+      "adapter"
+    ]
+  },
+  {
+    "id": 1781558161598,
+    "name": "Admin test product",
+    "description": "Created from test",
+    "price": 150,
+    "category": "test",
+    "available": true,
+    "image": "/images/test.png",
+    "rating": 0,
+    "stock": 5,
+    "tags": [
+      "test",
+      "admin"
+    ]
+  },
+  {
+    "id": 1781852492469,
+    "name": "Admin test product",
+    "description": "Created from test",
+    "price": 150,
+    "category": "test",
+    "available": true,
+    "image": "/images/test.png",
+    "rating": 0,
+    "stock": 5,
+    "tags": [
+      "test",
+      "admin"
+    ]
   }
-
 ]

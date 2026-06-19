@@ -1,9 +1,7 @@
 import { Request, Response } from "express";
 import { readJSON, writeJSON } from "../utils/file.util";
 import { Product } from "../types/product";
-import path from "path";
-
-const PRODUCTS_PATH = path.join(__dirname, "../data/products.json");
+import { PRODUCTS_PATH } from "../constants/paths";
  
 export const getProducts = (req: Request, res: Response) => {
   let products: Product[] = readJSON(PRODUCTS_PATH);

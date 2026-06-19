@@ -34,5 +34,194 @@
     "price": 450,
     "image": "/images/airpods3.png",
     "quantity": 1
+  },
+  {
+    "id": 1781540005692,
+    "userId": 1,
+    "productId": 1,
+    "name": "iPhone 13",
+    "price": 800,
+    "image": "/images/iphone1.jpg",
+    "quantity": 5
+  },
+  {
+    "id": 1781558161568,
+    "userId": 1781558161532,
+    "productId": 1,
+    "name": "iPhone 13",
+    "price": 800,
+    "image": "/images/iphone1.jpg",
+    "quantity": 1
+  },
+  {
+    "id": 1781599066652,
+    "userId": 1781599051982,
+    "productId": 4,
+    "name": "iPhone 15 Pro",
+    "price": 1300,
+    "image": "/images/iphone4.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599067821,
+    "userId": 1781599051982,
+    "productId": 3,
+    "name": "iPhone 15",
+    "price": 1100,
+    "image": "/images/iphone3.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599070117,
+    "userId": 1781599051982,
+    "productId": 8,
+    "name": "Наушники Apple AirPods Max",
+    "price": 1550,
+    "image": "/images/airpods2.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599072321,
+    "userId": 1781599051982,
+    "productId": 13,
+    "name": "Ноутбук Apple MacBook Pro 14.2 M5 2025 MDE04",
+    "price": 3500,
+    "image": "/images/macbook3.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599074876,
+    "userId": 1781599051982,
+    "productId": 18,
+    "name": "AirPods Max Gold",
+    "price": 1520,
+    "image": "/images/products/AirPods Max Gold.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599077529,
+    "userId": 1781599051982,
+    "productId": 21,
+    "name": "Apple iMac 24 Blue",
+    "price": 2800,
+    "image": "/images/products/Apple iMac 24_ Blue.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599079052,
+    "userId": 1781599051982,
+    "productId": 26,
+    "name": "Apple Pencil Pro",
+    "price": 280,
+    "image": "/images/products/Apple Pencil Pro.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599084062,
+    "userId": 1781599051982,
+    "productId": 29,
+    "name": "Apple Watch Graphite",
+    "price": 640,
+    "image": "/images/products/Apple Watch Graphite.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599087873,
+    "userId": 1781599051982,
+    "productId": 25,
+    "name": "Apple MagSafe Duo Charger",
+    "price": 360,
+    "image": "/images/products/Apple MagSafe Duo Charger.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599091511,
+    "userId": 1781599051982,
+    "productId": 35,
+    "name": "Case for iPad Green",
+    "price": 78,
+    "image": "/images/products/Case for Ipad Green.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599094157,
+    "userId": 1781599051982,
+    "productId": 40,
+    "name": "iPhone 15 Pink",
+    "price": 1140,
+    "image": "/images/products/iPhone 15 Pink.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599098888,
+    "userId": 1781599051982,
+    "productId": 42,
+    "name": "iPhone 17 Air White",
+    "price": 1490,
+    "image": "/images/products/iphone 17 air white.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599101058,
+    "userId": 1781599051982,
+    "productId": 48,
+    "name": "Mouse",
+    "price": 120,
+    "image": "/images/products/Mouse.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599103592,
+    "userId": 1781599051982,
+    "productId": 47,
+    "name": "Keyboard",
+    "price": 180,
+    "image": "/images/products/Keyboard.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599104736,
+    "userId": 1781599051982,
+    "productId": 46,
+    "name": "Keyboard with a stand White",
+    "price": 210,
+    "image": "/images/products/Keyboard with a stand White.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599107011,
+    "userId": 1781599051982,
+    "productId": 51,
+    "name": "USB-C Power Adapter",
+    "price": 95,
+    "image": "/images/products/USB-C Power Adapter.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599109245,
+    "userId": 1781599051982,
+    "productId": 50,
+    "name": "PowerBank White",
+    "price": 140,
+    "image": "/images/products/PowerBank White.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781599110413,
+    "userId": 1781599051982,
+    "productId": 49,
+    "name": "PowerBank Black",
+    "price": 140,
+    "image": "/images/products/PowerBank Black.png",
+    "quantity": 1
+  },
+  {
+    "id": 1781852492426,
+    "userId": 1781852492398,
+    "productId": 1,
+    "name": "iPhone 13",
+    "price": 800,
+    "image": "/images/iphone1.jpg",
+    "quantity": 1
   }
 ]
